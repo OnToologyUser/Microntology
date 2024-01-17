@@ -1209,26 +1209,25 @@
 }, {
   "@id" : "https://w3id.org/micronto/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@id" : "https://w3id.org/people#AContributorURI"
-  } ],
   "http://purl.org/dc/elements/1.1/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-05-12"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@id" : "https://w3id.org/people#AuthorURI"
+    "@id" : "https://w3id.org/micronto/Alberto%20Gonzalez%20Calatayud"
+  }, {
+    "@id" : "https://w3id.org/micronto/Alejandro%20Bernabeu%20Durendez"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "Capture the essence of microbiota"
+    "@value" : "This ontology aims to capture and model the intricate relationships between the human microbiota and various aspects of human health, including but not limited to diseases, physiological functions, and environmental interactions."
   } ],
   "http://purl.org/dc/elements/1.1/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "The Microbiota Ontology"
+    "@value" : "The Microbiota on Human Health Ontology"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "micronto"

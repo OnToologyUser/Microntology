@@ -8,12 +8,12 @@
 
 <https://w3id.org/micronto/> rdf:type owl:Ontology ;
                               owl:versionIRI <https://w3id.org/micronto/1.0> ;
-                              <http://purl.org/dc/elements/1.1/contributor> <https://w3id.org/people#AContributorURI> ;
                               <http://purl.org/dc/elements/1.1/created> "2023-05-12"^^xsd:date ;
-                              <http://purl.org/dc/elements/1.1/creator> <https://w3id.org/people#AuthorURI> ;
-                              <http://purl.org/dc/elements/1.1/description> "Capture the essence of microbiota"@en ;
+                              <http://purl.org/dc/elements/1.1/creator> <https://w3id.org/micronto/Alberto%20Gonzalez%20Calatayud> ,
+                                                                        <https://w3id.org/micronto/Alejandro%20Bernabeu%20Durendez> ;
+                              <http://purl.org/dc/elements/1.1/description> "This ontology aims to capture and model the intricate relationships between the human microbiota and various aspects of human health, including but not limited to diseases, physiological functions, and environmental interactions."@en ;
                               <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                              <http://purl.org/dc/elements/1.1/title> "The Microbiota Ontology"@en ;
+                              <http://purl.org/dc/elements/1.1/title> "The Microbiota on Human Health Ontology"@en ;
                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "micronto" ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/example#> ;
                               owl:priorVersion <https://w3id.org/example/1.0.0> ;

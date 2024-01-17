@@ -5,8 +5,8 @@ node [shape = rectangle, color="orange"]; ":" "NCIT:C45292" "NCIT:C25150" ":" "l
 	"micronto:isPartOfClass" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
 	"micronto:isPartOfFamily" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
 	"micronto:isPartOfKingdom" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
-	"micronto:" -> "https://w3id.org/people#AuthorURI" [ label = "dc:creator" ];
-	"micronto:" -> "https://w3id.org/people#AContributorURI" [ label = "dc:contributor" ];
+	"micronto:" -> "https://w3id.org/micronto/Alejandro Bernabeu Durendez" [ label = "dc:creator" ];
+	"micronto:" -> "https://w3id.org/micronto/Alberto Gonzalez Calatayud" [ label = "dc:creator" ];
 	"micronto:" -> "https://creativecommons.org/licenses/by/4.0/" [ label = "dc:license" ];
 	"micronto:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
 	"micronto:" -> "https://w3id.org/example#" [ label = "vann:preferredNamespaceUri" ];

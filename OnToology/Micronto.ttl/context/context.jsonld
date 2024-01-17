@@ -1,0 +1,269 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "http://purl.obolibrary.org/obo/ro.owl#0002469",
+      "@type" : "@id"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "isaffectedby" : {
+      "@id" : "http://base.namespace.com/isaffectedby",
+      "@type" : "@id"
+    },
+    "isPartOfFamily" : {
+      "@id" : "http://w3id.org/micronto/isPartOfFamily",
+      "@type" : "@id"
+    },
+    "D056692" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D056692"
+    },
+    "MTHU003059" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/MTHU003059"
+    },
+    "D004064" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D004064"
+    },
+    "MTHU001408" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/MTHU001408"
+    },
+    "isPartOfGenus" : {
+      "@id" : "http://w3id.org/micronto/isPartOfGenus",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/elements/1.1/created"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/elements/1.1/license"
+    },
+    "LP31426-7" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP31426-7"
+    },
+    "C12701" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12701"
+    },
+    "isPartOfPhylum" : {
+      "@id" : "http://w3id.org/micronto/isPartOfPhylum",
+      "@type" : "@id"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "D004194" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D004194"
+    },
+    "MTHU062386" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/MTHU062386",
+      "@type" : "@id"
+    },
+    "hasAgeCategory" : {
+      "@id" : "https://saref.etsi.org/saref4ehaw/v1.1.1/hasAgeCategory",
+      "@type" : "@id"
+    },
+    "D000339" : {
+      "@id" : "http://www.owl-ontologies.com/MESH#D000339",
+      "@type" : "@id"
+    },
+    "C0013227" : {
+      "@id" : "http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "REL_influences" : {
+      "@id" : "http://purl.obolibrary.org/obo/REL_influences",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://data.semanticweb.org/ns/swc/ontology#isPartOf",
+      "@type" : "@id"
+    },
+    "D005835" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D005835"
+    },
+    "hasClassification" : {
+      "@id" : "https://w3id.org/arco/ontology/core/hasClassification",
+      "@type" : "@id"
+    },
+    "D007107" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D007107"
+    },
+    "LP30556-2" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP30556-2"
+    },
+    "LP7565-7" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP7565-7"
+    },
+    "D002511" : {
+      "@id" : "http://www.owl-ontologies.com/MESH/D002511"
+    },
+    "isPartOfClass" : {
+      "@id" : "http://w3id.org/micronto/isPartOfClass",
+      "@type" : "@id"
+    },
+    "MTHU001413" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/MTHU001413"
+    },
+    "C12468" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12468"
+    },
+    "T029" : {
+      "@id" : "http://purl.bioontology.org/ontology/STY/T029",
+      "@type" : "@id"
+    },
+    "LP208052-3" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP208052-3"
+    },
+    "MTHU019420" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/MTHU019420"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "ODAE_0000019" : {
+      "@id" : "http://purl.obolibrary.org/obo/ODAE_0000019",
+      "@type" : "@id"
+    },
+    "BAO_0000398" : {
+      "@id" : "http://base.namespace.com/BAO_0000398",
+      "@type" : "@id"
+    },
+    "D012867" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D012867"
+    },
+    "hasDiagnosis" : {
+      "@id" : "http://purl.org/twc/dpo/ont/hasDiagnosis",
+      "@type" : "@id"
+    },
+    "isPartOfKingdom" : {
+      "@id" : "http://w3id.org/micronto/isPartOfKingdom",
+      "@type" : "@id"
+    },
+    "C25150" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150"
+    },
+    "isPartOfOrder" : {
+      "@id" : "http://w3id.org/micronto/isPartOfOrder",
+      "@type" : "@id"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "alteredBy" : {
+      "@id" : "https://sparql.cwrc.ca/alteredBy",
+      "@type" : "@id"
+    },
+    "D019936" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D019936"
+    },
+    "LP208944-1" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP208944-1"
+    },
+    "C45287" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287"
+    },
+    "isPartOfDomain" : {
+      "@id" : "http://w3id.org/micronto/isPartOfDomain",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "D004817" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D004817"
+    },
+    "C14283" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283"
+    },
+    "LP251083-4" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP251083-4"
+    },
+    "produces" : {
+      "@id" : "http://schema.org/produces",
+      "@type" : "@id"
+    },
+    "interactsWith" : {
+      "@id" : "https://saref.etsi.org/saref4wear/interactsWith",
+      "@type" : "@id"
+    },
+    "D009055" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D009055"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "LP15265-9" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP15265-9"
+    },
+    "D064806" : {
+      "@id" : "http://purl.bioontology.org/ontology/MESH/D064806"
+    },
+    "impacts" : {
+      "@id" : "https://w3id.org/sao#impacts",
+      "@type" : "@id"
+    },
+    "data_1872" : {
+      "@id" : "https://identifiers.org/data_1872"
+    },
+    "LP30322-9" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP30322-9"
+    },
+    "LP7365-2" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP7365-2"
+    },
+    "LP7441-1" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP7441-1"
+    },
+    "data_1044" : {
+      "@id" : "http://edamontology.org/data_1044"
+    },
+    "BAO_0090007" : {
+      "@id" : "http://base.namespace.com/BAO_0090007",
+      "@type" : "@id"
+    },
+    "involvedEntityIn" : {
+      "@id" : "http://www.ontotext.com/proton/protontop#involvedEntityIn",
+      "@type" : "@id"
+    },
+    "C45280" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "MTHU001406" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/MTHU001406"
+    },
+    "LP208558-9" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP208558-9"
+    },
+    "C45277" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277"
+    },
+    "C45290" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290"
+    },
+    "LP133774-2" : {
+      "@id" : "http://purl.bioontology.org/ontology/LNC/LP133774-2"
+    },
+    "C45292" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "C12428" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12428"
+    }
+  }
+}

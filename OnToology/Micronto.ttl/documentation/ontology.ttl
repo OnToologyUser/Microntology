@@ -1,0 +1,1062 @@
+@prefix : <https://w3id.org/micronto/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/micronto/> .
+
+<https://w3id.org/micronto/> rdf:type owl:Ontology ;
+                              owl:versionIRI <https://w3id.org/micronto/1.0> ;
+                              <http://purl.org/dc/elements/1.1/created> "2023-05-12"^^xsd:date ;
+                              <http://purl.org/dc/elements/1.1/creator> :Alberto_Gonzalez_Calatayud ,
+                                                                        :Alejandro_Bernabeu_Durendez ;
+                              <http://purl.org/dc/elements/1.1/description> "This ontology aims to capture and model the intricate relationships between the human microbiota and various aspects of human health, including but not limited to diseases, physiological functions, and environmental interactions."@en ;
+                              <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                              <http://purl.org/dc/elements/1.1/title> "The Microbiota on Human Health Ontology (MHHO)"@en ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "micronto" ;
+                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/example#> ;
+                              owl:priorVersion <https://w3id.org/example/1.0.0> ;
+                              owl:versionInfo "0.0.1" ;
+                              <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://base.namespace.com/BAO_0000398
+<http://base.namespace.com/BAO_0000398> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://purl.bioontology.org/ontology/SNOMEDCT/767279008> ;
+                                        rdfs:range <https://w3id.org/micronto/0008> ;
+                                        rdfs:label "BAO_0000398 (is regulated by)"@en .
+
+
+###  http://base.namespace.com/BAO_0090007
+<http://base.namespace.com/BAO_0090007> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/micronto/0005> ;
+                                        rdfs:range <http://purl.bioontology.org/ontology/MESH/T029> ;
+                                        rdfs:label "BAO_0090007 (occurs in)"@en .
+
+
+###  http://base.namespace.com/isaffectedby
+<http://base.namespace.com/isaffectedby> rdf:type owl:ObjectProperty ;
+                                         owl:equivalentProperty <https://sparql.cwrc.ca/alteredBy> ;
+                                         owl:inverseOf <http://www.owl-ontologies.com/MESH#D000339> ;
+                                         rdfs:domain <http://purl.bioontology.org/ontology/LNC/MTHU019420> ;
+                                         rdfs:range <https://w3id.org/micronto/0005> ;
+                                         rdfs:label "SIO_001159 (is affected by)"@en .
+
+
+###  http://data.semanticweb.org/ns/swc/ontology#isPartOf
+<http://data.semanticweb.org/ns/swc/ontology#isPartOf> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://purl.bioontology.org/ontology/LNC/LP208052-3> ,
+                                                                   <http://purl.bioontology.org/ontology/LNC/LP251083-4> ,
+                                                                   <http://purl.bioontology.org/ontology/LNC/LP30322-9> ,
+                                                                   <http://purl.bioontology.org/ontology/LNC/LP30556-2> ,
+                                                                   <http://purl.bioontology.org/ontology/LNC/LP31426-7> ,
+                                                                   <http://purl.bioontology.org/ontology/LNC/LP7365-2> ,
+                                                                   <http://purl.bioontology.org/ontology/LNC/LP7565-7> ,
+                                                                   <http://purl.bioontology.org/ontology/LNC/MTHU003059> ;
+                                                       rdfs:range <http://purl.bioontology.org/ontology/LNC/LP208558-9> ,
+                                                                  <http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227> ,
+                                                                  <http://purl.bioontology.org/ontology/MESH/D005835> ,
+                                                                  <http://purl.bioontology.org/ontology/MESH/D009055> ;
+                                                       rdfs:label "swc:isPartOf"@en .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU062386
+<http://purl.bioontology.org/ontology/LNC/MTHU062386> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://w3id.org/micronto/0009> ;
+                                                      rdfs:label "loinc:MTHU062386 (Has infectious disease or illness)"@en .
+
+
+###  http://purl.bioontology.org/ontology/STY/T029
+<http://purl.bioontology.org/ontology/STY/T029> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://purl.bioontology.org/ontology/MESH/T029> ;
+                                                rdfs:range <http://purl.bioontology.org/ontology/LNC/MTHU019420> ;
+                                                rdfs:label "STY:T029 (has Location)"@en .
+
+
+###  http://purl.obolibrary.org/obo/ODAE_0000019
+<http://purl.obolibrary.org/obo/ODAE_0000019> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://w3id.org/micronto/0009> ;
+                                              rdfs:range <http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227> ;
+                                              rdfs:label "OBO:ODAE_0000019 (treated with)"@en .
+
+
+###  http://purl.obolibrary.org/obo/REL_influences
+<http://purl.obolibrary.org/obo/REL_influences> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://purl.bioontology.org/ontology/LNC/LP208944-1> ;
+                                                rdfs:range <http://purl.bioontology.org/ontology/MESH/D004064> ;
+                                                rdfs:label "OBO:REL_influences"@en .
+
+
+###  http://purl.obolibrary.org/obo/chmo.owl/0010017(mitigates)
+<http://purl.obolibrary.org/obo/chmo.owl/0010017(mitigates)> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://vocabs.lter-europe.net/EnvThes/21962> ;
+                                                             rdfs:range <http://purl.bioontology.org/ontology/MESH/D064806> ;
+                                                             rdfs:label "CHMO:0010017 (mitigates)"@en .
+
+
+###  http://purl.obolibrary.org/obo/ro.owl#0002469
+<http://purl.obolibrary.org/obo/ro.owl#0002469> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://purl.bioontology.org/ontology/LNC/LP208944-1> ;
+                                                rdfs:range <http://vocabs.lter-europe.net/EnvThes/21962> ;
+                                                rdfs:label "ro:0002469 (provides)"@en .
+
+
+###  http://purl.org/twc/dpo/ont/hasDiagnosis
+<http://purl.org/twc/dpo/ont/hasDiagnosis> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://purl.bioontology.org/ontology/LNC/LP133774-2> ;
+                                           rdfs:range <http://w3id.org/micronto/0009> .
+
+
+###  http://schema.org/produces
+<http://schema.org/produces> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://purl.bioontology.org/ontology/LNC/MTHU019420> ;
+                             rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/767279008> ;
+                             rdfs:label "schema:produces"@en .
+
+
+###  http://w3id.org/micronto/isPartOfClass
+<http://w3id.org/micronto/isPartOfClass> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://data.semanticweb.org/ns/swc/ontology#isPartOf> ;
+                                         rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287> ;
+                                         rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280> .
+
+
+###  http://w3id.org/micronto/isPartOfDomain
+<http://w3id.org/micronto/isPartOfDomain> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://data.semanticweb.org/ns/swc/ontology#isPartOf> ;
+                                          rdfs:domain <http://edamontology.org/data_1044> ;
+                                          rdfs:range <https://w3id.org/micronto/0004> .
+
+
+###  http://w3id.org/micronto/isPartOfFamily
+<http://w3id.org/micronto/isPartOfFamily> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://data.semanticweb.org/ns/swc/ontology#isPartOf> ;
+                                          rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292> ;
+                                          rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290> .
+
+
+###  http://w3id.org/micronto/isPartOfGenus
+<http://w3id.org/micronto/isPartOfGenus> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://data.semanticweb.org/ns/swc/ontology#isPartOf> ;
+                                         rdfs:domain <http://purl.jp/bio/10/mccv/000003> ;
+                                         rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292> .
+
+
+###  http://w3id.org/micronto/isPartOfKingdom
+<http://w3id.org/micronto/isPartOfKingdom> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://data.semanticweb.org/ns/swc/ontology#isPartOf> ;
+                                           rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277> ;
+                                           rdfs:range <http://edamontology.org/data_1044> .
+
+
+###  http://w3id.org/micronto/isPartOfOrder
+<http://w3id.org/micronto/isPartOfOrder> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://data.semanticweb.org/ns/swc/ontology#isPartOf> ;
+                                         rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290> ;
+                                         rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287> .
+
+
+###  http://w3id.org/micronto/isPartOfPhylum
+<http://w3id.org/micronto/isPartOfPhylum> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://data.semanticweb.org/ns/swc/ontology#isPartOf> ;
+                                          rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280> ;
+                                          rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277> .
+
+
+###  http://w3id.org/micronto/0010
+<http://w3id.org/micronto/0010> rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://purl.bioontology.org/ontology/LNC/LP133774-2> ;
+                                rdfs:range <http://purl.bioontology.org/ontology/LNC/MTHU019420> ;
+                                rdfs:label "micronto:0010 (hasMicrobiota)"@en .
+
+
+###  http://www.ontotext.com/proton/protontop#involvedEntityIn
+<http://www.ontotext.com/proton/protontop#involvedEntityIn> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <https://w3id.org/micronto/0008> ;
+                                                            rdfs:range <https://w3id.org/micronto/0007> ;
+                                                            rdfs:label "ptop:involvedEntityIn"@en .
+
+
+###  http://www.owl-ontologies.com/MESH#D000339
+<http://www.owl-ontologies.com/MESH#D000339> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <https://sparql.cwrc.ca/alteredBy> ;
+                                             rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> ,
+                                                         <http://purl.bioontology.org/ontology/MESH/D064806> ;
+                                             rdfs:range <http://purl.bioontology.org/ontology/LNC/MTHU019420> ,
+                                                        <http://purl.bioontology.org/ontology/MESH/D007107> ;
+                                             rdfs:label "mesh:D000339 (Affect)"@en .
+
+
+###  https://saref.etsi.org/saref4ehaw/v1.1.1/hasAgeCategory
+<https://saref.etsi.org/saref4ehaw/v1.1.1/hasAgeCategory> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://purl.bioontology.org/ontology/LNC/LP133774-2> ;
+                                                          rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> ;
+                                                          rdfs:label "s4ehaw:hasAgeCategory"@en .
+
+
+###  https://saref.etsi.org/saref4wear/interactsWith
+<https://saref.etsi.org/saref4wear/interactsWith> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <https://w3id.org/micronto/0007> ;
+                                                  rdfs:range <http://purl.bioontology.org/ontology/LNC/MTHU019420> ;
+                                                  rdfs:label "s4wear:interactsWith"@en .
+
+
+###  https://sparql.cwrc.ca/alteredBy
+<https://sparql.cwrc.ca/alteredBy> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <https://w3id.org/micronto/0002> ;
+                                   rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> ;
+                                   rdfs:label "cwrc:alteredBy" .
+
+
+###  https://w3id.org/arco/ontology/core/hasClassification
+<https://w3id.org/arco/ontology/core/hasClassification> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://purl.bioontology.org/ontology/LNC/MTHU019420> ;
+                                                        rdfs:range <https://identifiers.org/data_1872> ;
+                                                        rdfs:label "arco:hasClassification"@en .
+
+
+###  https://w3id.org/sao#impacts
+<https://w3id.org/sao#impacts> rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> ;
+                               rdfs:range <https://w3id.org/micronto/0007> ;
+                               rdfs:label "saont:impacts"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://edamontology.org/data_1044
+<http://edamontology.org/data_1044> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://identifiers.org/data_1872> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12428
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12428> rdf:type owl:Class .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12468
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12468> rdf:type owl:Class .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12701
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12701> rdf:type owl:Class .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283> rdf:type owl:Class ;
+                                                            owl:disjointWith <http://purl.bioontology.org/ontology/SNOMEDCT/41146007> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> rdf:type owl:Class .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://identifiers.org/data_1872> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://identifiers.org/data_1872> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://identifiers.org/data_1872> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://identifiers.org/data_1872> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://identifiers.org/data_1872> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP133774-2
+<http://purl.bioontology.org/ontology/LNC/LP133774-2> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP15265-9
+<http://purl.bioontology.org/ontology/LNC/LP15265-9> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.bioontology.org/ontology/LNC/LP31426-7> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP208052-3
+<http://purl.bioontology.org/ontology/LNC/LP208052-3> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP208558-9
+<http://purl.bioontology.org/ontology/LNC/LP208558-9> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.bioontology.org/ontology/MESH/T029> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP208944-1
+<http://purl.bioontology.org/ontology/LNC/LP208944-1> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP251083-4
+<http://purl.bioontology.org/ontology/LNC/LP251083-4> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP30322-9
+<http://purl.bioontology.org/ontology/LNC/LP30322-9> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP30556-2
+<http://purl.bioontology.org/ontology/LNC/LP30556-2> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP31426-7
+<http://purl.bioontology.org/ontology/LNC/LP31426-7> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP7365-2
+<http://purl.bioontology.org/ontology/LNC/LP7365-2> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP7441-1
+<http://purl.bioontology.org/ontology/LNC/LP7441-1> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/micronto/0007> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP7565-7
+<http://purl.bioontology.org/ontology/LNC/LP7565-7> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU001406
+<http://purl.bioontology.org/ontology/LNC/MTHU001406> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/micronto/0007> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU001408
+<http://purl.bioontology.org/ontology/LNC/MTHU001408> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/micronto/0007> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU001413
+<http://purl.bioontology.org/ontology/LNC/MTHU001413> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/micronto/0007> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU003059
+<http://purl.bioontology.org/ontology/LNC/MTHU003059> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU019420
+<http://purl.bioontology.org/ontology/LNC/MTHU019420> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D004064
+<http://purl.bioontology.org/ontology/MESH/D004064> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/micronto/0007> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D004194
+<http://purl.bioontology.org/ontology/MESH/D004194> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D004817
+<http://purl.bioontology.org/ontology/MESH/D004817> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D005835
+<http://purl.bioontology.org/ontology/MESH/D005835> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.bioontology.org/ontology/MESH/T029> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D007107
+<http://purl.bioontology.org/ontology/MESH/D007107> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D009055
+<http://purl.bioontology.org/ontology/MESH/D009055> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.bioontology.org/ontology/MESH/T029> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D012867
+<http://purl.bioontology.org/ontology/MESH/D012867> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.bioontology.org/ontology/MESH/T029> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D019936
+<http://purl.bioontology.org/ontology/MESH/D019936> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://vocabs.lter-europe.net/EnvThes/21962> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D056692
+<http://purl.bioontology.org/ontology/MESH/D056692> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://vocabs.lter-europe.net/EnvThes/21962> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D064806
+<http://purl.bioontology.org/ontology/MESH/D064806> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/MESH/T029
+<http://purl.bioontology.org/ontology/MESH/T029> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/373217005
+<http://purl.bioontology.org/ontology/SNOMEDCT/373217005> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.bioontology.org/ontology/LNC/LP31426-7> ;
+                                                          <http://purl.org/dc/elements/1.1/description> "A group of penicillin antibiotics that are effective against a wider range of bacteria, including both Gram-positive and some Gram-negative bacteria. Used for treating a variety of infections when the specific pathogen is unknown."@en ;
+                                                          rdfs:comment "While effective against a broad range of bacteria, these antibiotics can significantly alter the microbiota, potentially leading to dysbiosis. Caution is advised in their use to minimize unintended impacts on beneficial gut flora."@en ;
+                                                          rdfs:label "Broad Spectrum Penicillin"@en .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/41146007
+<http://purl.bioontology.org/ontology/SNOMEDCT/41146007> rdf:type owl:Class .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/767279008
+<http://purl.bioontology.org/ontology/SNOMEDCT/767279008> rdf:type owl:Class .
+
+
+###  http://purl.jp/bio/10/mccv/000003
+<http://purl.jp/bio/10/mccv/000003> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://identifiers.org/data_1872> ;
+                                    <http://purl.org/dc/elements/1.1/description> "Represents a group of microorganisms capable of interbreeding and producing fertile offspring. This designation distinguishes closely related microbial entities within the microbiota, aiding in the detailed characterization of microbial diversity."@en ;
+                                    rdfs:label "Species" .
+
+
+###  http://purl.org/sig/ont/fma/265130
+<http://purl.org/sig/ont/fma/265130> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.bioontology.org/ontology/MESH/T029> .
+
+
+###  http://vocabs.lter-europe.net/EnvThes/21962
+<http://vocabs.lter-europe.net/EnvThes/21962> rdf:type owl:Class .
+
+
+###  http://w3id.org/micronto/0009
+<http://w3id.org/micronto/0009> rdf:type owl:Class .
+
+
+###  http://www.owl-ontologies.com/MESH/D002511
+<http://www.owl-ontologies.com/MESH/D002511> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.bioontology.org/ontology/LNC/LP31426-7> ;
+                                             <http://purl.org/dc/elements/1.1/description> "A class of beta-lactam antibiotics similar to penicillins but with a broader spectrum of activity. Cephalosporins are divided into several generations, each with varying effectiveness against Gram-positive and Gram-negative bacteria."@en ;
+                                             rdfs:comment "The impact of cephalosporins on the microbiota varies by generation. While generally considered moderate in their effect, prolonged use can lead to alterations in the gut and respiratory tract microbiota."@en ;
+                                             rdfs:label "Cephalosporins"@en .
+
+
+###  https://identifiers.org/data_1872
+<https://identifiers.org/data_1872> rdf:type owl:Class .
+
+
+###  https://w3id.org/micronto/0001
+<https://w3id.org/micronto/0001> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://vocabs.lter-europe.net/EnvThes/21962> ;
+                                 <http://purl.org/dc/elements/1.1/description> "Live microorganisms, usually bacteria or yeast, that confer health benefits to the host when consumed in adequate amounts, contributing to the balance of the microbiota."@en ;
+                                 rdfs:label "Probiotic"@en .
+
+
+###  https://w3id.org/micronto/0002
+<https://w3id.org/micronto/0002> rdf:type owl:Class ;
+                                 <http://purl.org/dc/elements/1.1/description> "Specific composition and diversity of microorganisms within the microbiota, considering variations in different body locations and environmental conditions."@en ;
+                                 rdfs:label "Microorganism Composition" .
+
+
+###  https://w3id.org/micronto/0003
+<https://w3id.org/micronto/0003> rdf:type owl:Class ;
+                                 <http://purl.org/dc/elements/1.1/description> "Positive contributions of the microbiota to human health, emphasizing the benefits of maintaining a balanced and diverse microbial community."@en ;
+                                 rdfs:label "Microbiota Benefits" .
+
+
+###  https://w3id.org/micronto/0004
+<https://w3id.org/micronto/0004> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://identifiers.org/data_1872> ;
+                                 <http://purl.org/dc/elements/1.1/description> "Represents the highest taxonomic rank in the classification of microorganisms, emphasizing the broad categorization of life forms within the microbiota."@en ;
+                                 rdfs:label "Domain" .
+
+
+###  https://w3id.org/micronto/0005
+<https://w3id.org/micronto/0005> rdf:type owl:Class ;
+                                 <http://purl.org/dc/elements/1.1/description> "How spatial variations within the body, such as different organ systems and tissue types, influence the composition and function of the microbiota."@en ;
+                                 rdfs:comment "These changes can have substantial implications in comparative studies."@en ;
+                                 rdfs:label "Spatial Changes" .
+
+
+###  https://w3id.org/micronto/0006
+<https://w3id.org/micronto/0006> rdf:type owl:Class ;
+                                 <http://purl.org/dc/elements/1.1/description> "Explores how changes in the external environment impact the microbiota, considering factors such as climate, pollution, and other external influences."@en ;
+                                 rdfs:comment "Include both natural and anthropogenic changes here."@en ;
+                                 rdfs:label "Environmental Changes" .
+
+
+###  https://w3id.org/micronto/0007
+<https://w3id.org/micronto/0007> rdf:type owl:Class ;
+                                 <http://purl.org/dc/elements/1.1/description> "Overall physiological systems of the human body, exploring the interactions and influences of the microbiota on these systems."@en ;
+                                 rdfs:label "Human Physiological System"@en .
+
+
+###  https://w3id.org/micronto/0008
+<https://w3id.org/micronto/0008> rdf:type owl:Class ;
+                                 <http://purl.org/dc/elements/1.1/description> "Physiological pathways within the human body, considering how these pathways interact with and are influenced by the microbiota."@en ;
+                                 rdfs:label "Human Pathways" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://edamontology.org/data_1044
+<http://edamontology.org/data_1044> rdf:type owl:NamedIndividual ,
+                                             <http://edamontology.org/data_1044> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12428
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12428> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12428> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12468
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12468> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12468> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12701
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12701> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12701> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290> .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292> rdf:type owl:NamedIndividual ,
+                                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP133774-2
+<http://purl.bioontology.org/ontology/LNC/LP133774-2> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/LP133774-2> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP15265-9
+<http://purl.bioontology.org/ontology/LNC/LP15265-9> rdf:type owl:NamedIndividual ,
+                                                              <http://purl.bioontology.org/ontology/LNC/LP15265-9> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP208052-3
+<http://purl.bioontology.org/ontology/LNC/LP208052-3> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/LP208052-3> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP208558-9
+<http://purl.bioontology.org/ontology/LNC/LP208558-9> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/LP208558-9> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP208944-1
+<http://purl.bioontology.org/ontology/LNC/LP208944-1> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/LP208944-1> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP251083-4
+<http://purl.bioontology.org/ontology/LNC/LP251083-4> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/LP251083-4> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP30322-9
+<http://purl.bioontology.org/ontology/LNC/LP30322-9> rdf:type owl:NamedIndividual ,
+                                                              <http://purl.bioontology.org/ontology/LNC/LP30322-9> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP30556-2
+<http://purl.bioontology.org/ontology/LNC/LP30556-2> rdf:type owl:NamedIndividual ,
+                                                              <http://purl.bioontology.org/ontology/LNC/LP30556-2> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP31426-7
+<http://purl.bioontology.org/ontology/LNC/LP31426-7> rdf:type owl:NamedIndividual ,
+                                                              <http://purl.bioontology.org/ontology/LNC/LP31426-7> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP7365-2
+<http://purl.bioontology.org/ontology/LNC/LP7365-2> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/LNC/LP7365-2> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP7441-1
+<http://purl.bioontology.org/ontology/LNC/LP7441-1> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/LNC/LP7441-1> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/LP7565-7
+<http://purl.bioontology.org/ontology/LNC/LP7565-7> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/LNC/LP7565-7> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU001406
+<http://purl.bioontology.org/ontology/LNC/MTHU001406> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/MTHU001406> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU001408
+<http://purl.bioontology.org/ontology/LNC/MTHU001408> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/MTHU001408> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU001413
+<http://purl.bioontology.org/ontology/LNC/MTHU001413> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/MTHU001413> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU003059
+<http://purl.bioontology.org/ontology/LNC/MTHU003059> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/MTHU003059> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/MTHU019420
+<http://purl.bioontology.org/ontology/LNC/MTHU019420> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.bioontology.org/ontology/LNC/MTHU019420> .
+
+
+###  http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227> rdf:type owl:NamedIndividual ,
+                                                                     <http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D004064
+<http://purl.bioontology.org/ontology/MESH/D004064> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D004064> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D004194
+<http://purl.bioontology.org/ontology/MESH/D004194> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D004194> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D004817
+<http://purl.bioontology.org/ontology/MESH/D004817> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D004817> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D005835
+<http://purl.bioontology.org/ontology/MESH/D005835> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D005835> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D007107
+<http://purl.bioontology.org/ontology/MESH/D007107> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D007107> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D009055
+<http://purl.bioontology.org/ontology/MESH/D009055> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D009055> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D012867
+<http://purl.bioontology.org/ontology/MESH/D012867> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D012867> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D019936
+<http://purl.bioontology.org/ontology/MESH/D019936> rdf:type owl:NamedIndividual ,
+                                                             <https://w3id.org/micronto/0001> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D056692
+<http://purl.bioontology.org/ontology/MESH/D056692> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D056692> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D064806
+<http://purl.bioontology.org/ontology/MESH/D064806> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.bioontology.org/ontology/MESH/D064806> .
+
+
+###  http://purl.bioontology.org/ontology/MESH/T029
+<http://purl.bioontology.org/ontology/MESH/T029> rdf:type owl:NamedIndividual ,
+                                                          <http://purl.bioontology.org/ontology/MESH/T029> .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/41146007
+<http://purl.bioontology.org/ontology/SNOMEDCT/41146007> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.bioontology.org/ontology/SNOMEDCT/41146007> .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/767279008
+<http://purl.bioontology.org/ontology/SNOMEDCT/767279008> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.bioontology.org/ontology/SNOMEDCT/767279008> .
+
+
+###  http://purl.jp/bio/10/mccv#000003
+<http://purl.jp/bio/10/mccv#000003> rdf:type owl:NamedIndividual ,
+                                             <http://purl.jp/bio/10/mccv/000003> .
+
+
+###  http://purl.org/sig/ont/fma/265130
+<http://purl.org/sig/ont/fma/265130> rdf:type owl:NamedIndividual ,
+                                              <http://purl.org/sig/ont/fma/265130> .
+
+
+###  http://vocabs.lter-europe.net/EnvThes/21962
+<http://vocabs.lter-europe.net/EnvThes/21962> rdf:type owl:NamedIndividual ,
+                                                       <http://vocabs.lter-europe.net/EnvThes/21962> .
+
+
+###  http://w3id.org/micronto/0001
+<http://w3id.org/micronto/0001> rdf:type owl:NamedIndividual ,
+                                         <http://purl.bioontology.org/ontology/MESH/D019936> .
+
+
+###  http://w3id.org/micronto/0002
+<http://w3id.org/micronto/0002> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/micronto/0002> .
+
+
+###  http://w3id.org/micronto/0003
+<http://w3id.org/micronto/0003> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/micronto/0003> .
+
+
+###  http://w3id.org/micronto/0004
+<http://w3id.org/micronto/0004> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/micronto/0004> .
+
+
+###  http://w3id.org/micronto/0005
+<http://w3id.org/micronto/0005> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/micronto/0005> .
+
+
+###  http://w3id.org/micronto/0006
+<http://w3id.org/micronto/0006> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/micronto/0006> .
+
+
+###  http://w3id.org/micronto/0007
+<http://w3id.org/micronto/0007> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/micronto/0007> .
+
+
+###  http://w3id.org/micronto/0008
+<http://w3id.org/micronto/0008> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/micronto/0008> .
+
+
+###  http://w3id.org/micronto/0009
+<http://w3id.org/micronto/0009> rdf:type owl:NamedIndividual ,
+                                         <http://w3id.org/micronto/0009> .
+
+
+###  https://identifiers.org/data_1872
+<https://identifiers.org/data_1872> rdf:type owl:NamedIndividual ,
+                                             <https://identifiers.org/data_1872> .
+
+
+###  https://w3id.org/micronto/LNC/LP15265-9
+<https://w3id.org/micronto/LNC/LP15265-9> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/micronto/MESH/D002511
+<https://w3id.org/micronto/MESH/D002511> rdf:type owl:NamedIndividual ,
+                                                  <http://www.owl-ontologies.com/MESH/D002511> .
+
+
+###  https://w3id.org/micronto/SNOMEDCT/373217005
+<https://w3id.org/micronto/SNOMEDCT/373217005> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.bioontology.org/ontology/SNOMEDCT/373217005> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://edamontology.org/data_1044> <http://purl.org/dc/elements/1.1/description> "Highest taxonomic rank, encompassing major groups of microorganisms such as bacteria, archaea, fungi, and viruses. It represents the broadest categorization of microbial life within the context of the human microbiota."@en ;
+                                    rdfs:label "Kingdom" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12428> <http://purl.org/dc/elements/1.1/description> "Microbiota present in the trachea, exploring its potential impact on respiratory health and interactions with the broader respiratory system."@en ;
+                                                            rdfs:label "Trachea" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12468> <http://purl.org/dc/elements/1.1/description> "Microbiota residing in the lungs, exploring its potential role in respiratory health and the modulation of immune responses in the pulmonary environment."@en ;
+                                                            rdfs:label "Lung" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12701> <http://purl.org/dc/elements/1.1/description> "Innermost layer of certain plant tissues, potentially relevant in the context of microbiota interactions with plant organisms."@en ;
+                                                            rdfs:comment "Special attention to the interaction between cutaneous microbiota and the underlying skin layers."@en ;
+                                                            rdfs:label "Hipodermis" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283> <http://purl.org/dc/elements/1.1/description> "A category of microorganisms that can infect host cells, exploring their interactions with the microbiota and potential implications for human health."@en ;
+                                                            rdfs:comment "Important to differentiate between viruses that directly infect humans and bacteriophages that impact the microbiota indirectly." ;
+                                                            rdfs:label "Virus" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25150> <http://purl.org/dc/elements/1.1/description> "Represents the age variable concerning microbiota, indicating how age influences the composition and function of microorganisms inhabiting the human body."@en ;
+                                                            rdfs:comment "Relevant for longitudinal studies. Age can significantly influence the composition of the microbiota, which is crucial for understanding health variations throughout life."@en ;
+                                                            rdfs:label "Age"@en .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45277> <http://purl.org/dc/elements/1.1/description> "Taxonomic rank that groups microorganisms based on shared characteristics. This class helps classify major branches of microbial diversity, providing insights into the broader organizational structure of the microbiota."@en ;
+                                                            rdfs:label "Phylum" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45280> <http://purl.org/dc/elements/1.1/description> "Refines the classification of microorganisms beyond the phylum level. It categorizes microbial taxa based on additional shared features, offering a more detailed understanding of the diversity present in the human microbiota."@en ;
+                                                            rdfs:label "Class" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45287> <http://purl.org/dc/elements/1.1/description> "Organizes microorganisms based on similarities in anatomy, physiology, and genetic traits. This class provides a more specific classification, contributing to a nuanced representation of microbial communities."@en ;
+                                                            rdfs:label "Order" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45290> <http://purl.org/dc/elements/1.1/description> "Microbiota ontology groups closely related microbial species below the order level. It represents clusters of microorganisms sharing common ancestry and similar functions, contributing to a finer level of granularity in the ontology."@en ;
+                                                            rdfs:label "Family" .
+
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45292> <http://purl.org/dc/elements/1.1/description> "Categorizes microorganisms below the family level. It offers insights into the relationships between closely related microbial species, providing a more specific and informative classification."@en ;
+                                                            rdfs:label "Genus" .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP133774-2> <http://purl.org/dc/elements/1.1/description> "A class describing a human individual. This class emphasizes the presence and role of the microbiota, a complex community of microorganisms, in a person's overall health."@en ;
+                                                      rdfs:comment "Key to the ontology, this class links the human host with their microbiota, highlighting the interconnectedness of humans and their resident microorganisms."@en ;
+                                                      rdfs:label "Person"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP15265-9> <http://purl.org/dc/elements/1.1/description> "A widely used antibiotic in the penicillin group, effective against a variety of bacterial infections, particularly those in the ear, nose, throat, urinary tract, and skin. It's often the first-line treatment for many common infections."@en ;
+                                                     rdfs:comment "Amoxicillin can disrupt the natural balance of the microbiota, particularly in the gastrointestinal tract. Its use should be balanced with the potential for reducing microbial diversity in the gut."@en ;
+                                                     rdfs:label "Amoxicillin"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP208052-3> <http://purl.org/dc/elements/1.1/description> "Microbiota present on and around the male genitalia, considering its potential implications for reproductive health and overall well-being."@en ;
+                                                      rdfs:label "Penis" .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP208558-9> <http://purl.org/dc/elements/1.1/description> "Pertains to the digestive system, including the stomach and intestines, where a significant portion of the microbiota resides and plays crucial roles in digestion and nutrient absorption."@en ;
+                                                      rdfs:label "Gastrointestinal Tract" .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP208944-1> <http://purl.org/dc/elements/1.1/description> "Impact of dietary patterns on the composition and function of the microbiota, emphasizing the bidirectional relationship between nutrition and microbial communities."@en ;
+                                                      rdfs:label "Diet" .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP251083-4> <http://purl.org/dc/elements/1.1/description> "Microbiota present in the female reproductive organs, emphasizing its role in reproductive health and potential influences on overall well-being."@en ;
+                                                      rdfs:label "Vagina"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP30322-9> <http://purl.org/dc/elements/1.1/description> "Microbiota present in the male reproductive organs, considering its potential influence on reproductive health and overall well-being."@en ;
+                                                     rdfs:label "Testicles"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP30556-2> <http://purl.org/dc/elements/1.1/description> "Microbiota present on the tongue's surface, emphasizing its role in oral health and potential contributions to the overall composition of the oral microbiota."@en ;
+                                                     rdfs:label "Tongue"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP31426-7> <http://purl.org/dc/elements/1.1/description> "Addresses the relationship between the use of antibiotics and their impact on the microbiota, considering both positive and negative effects"@en ;
+                                                     rdfs:label "Antibiotics"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP7365-2> <http://purl.org/dc/elements/1.1/description> "Addresses the microbiota within the intestine, emphasizing its diverse composition and functions in digestion, nutrient absorption, and overall gut health."@en ;
+                                                    rdfs:label "Intestine"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP7441-1> <http://purl.org/dc/elements/1.1/description> "Interactions between the microbiota and the nervous system, including the gut-brain axis and the potential influence of microbial communities on neurological functions."@en ;
+                                                    rdfs:label "Nervous System"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/LP7565-7> <http://purl.org/dc/elements/1.1/description> "Microbiota present in saliva, emphasizing its role in oral health and potential contributions to the overall composition of the digestive microbiota."@en ;
+                                                    rdfs:label "Saliva"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/MTHU001406> <http://purl.org/dc/elements/1.1/description> "Microbiota's potential impact on the cardiovascular system, including considerations of vascular health and associated implications."@en ;
+                                                      rdfs:label "Cardiovascular System" .
+
+
+<http://purl.bioontology.org/ontology/LNC/MTHU001408> <http://purl.org/dc/elements/1.1/description> "Interplay between the microbiota and the endocrine system, considering hormonal regulation and potential implications for metabolic health."@en ;
+                                                      rdfs:label "Endocrine System"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/MTHU001413> <http://purl.org/dc/elements/1.1/description> "Microbiota's role in the respiratory system, including considerations of respiratory health and potential interactions with respiratory diseases."@en ;
+                                                      rdfs:label "Respiratory System" .
+
+
+<http://purl.bioontology.org/ontology/LNC/MTHU003059> <http://purl.org/dc/elements/1.1/description> "Microbiota present in the stomach, considering its role in digestion, gastric health, and interactions with other parts of the gastrointestinal tract."@en ;
+                                                      rdfs:label "Stomach"@en .
+
+
+<http://purl.bioontology.org/ontology/LNC/MTHU019420> <http://purl.org/dc/elements/1.1/description> "Broad category of microorganisms, including bacteria, viruses, fungi, and archaea, emphasizing their diversity and roles in the microbiota."@en ;
+                                                      rdfs:label "Microorganism" .
+
+
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0013227> <http://purl.org/dc/elements/1.1/description> "Pharmaceutical substances and their potential impact on the microbiota, considering both therapeutic and adverse effects."@en ;
+                                                            rdfs:label "Medicines" .
+
+
+<http://purl.bioontology.org/ontology/MESH/D004064> <http://purl.org/dc/elements/1.1/description> "Entirety of the digestive tract, emphasizing the microbiota's crucial role in digestion, nutrient absorption, and overall gastrointestinal health."@en ;
+                                                    rdfs:label "Digestive System"@en .
+
+
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://purl.org/dc/elements/1.1/description> "A class representing bacterial diseases that can afflict a person. These diseases often require antibiotic treatment, which can have a significant impact on the individual's microbiota."@en ;
+                                                    rdfs:comment "This class focuses on the effects of bacterial diseases and their treatments on human health, particularly noting the consequences of antibiotic use on the microbiota."@en ;
+                                                    rdfs:label "Disease"@en .
+
+
+<http://purl.bioontology.org/ontology/MESH/D004817> <http://purl.org/dc/elements/1.1/description> "Outermost layer of the skin, emphasizing the role of the microbiota in maintaining skin barrier function and overall skin health."@en ;
+                                                    rdfs:comment "Direct interaction between the microbiota and the body's first line of defense."@en ;
+                                                    rdfs:label "Epidermis" .
+
+
+<http://purl.bioontology.org/ontology/MESH/D005835> <http://purl.org/dc/elements/1.1/description> "Microbial communities present in the genital organs, highlighting their role in reproductive health and potential influences on overall well-being."@en ;
+                                                    rdfs:label "Genitalia" .
+
+
+<http://purl.bioontology.org/ontology/MESH/D007107> <http://purl.org/dc/elements/1.1/description> "Interactions between the microbiota and the immune system, highlighting the crucial role of microbial communities in immune function and defense against pathogens."@en ;
+                                                    rdfs:label "Immune System"@en .
+
+
+<http://purl.bioontology.org/ontology/MESH/D009055> <http://purl.org/dc/elements/1.1/description> "Oral microbiota, emphasizing the diverse microbial communities present in the mouth and their impact on oral health and beyond."@en ;
+                                                    rdfs:label "Mouth" .
+
+
+<http://purl.bioontology.org/ontology/MESH/D012867> <http://purl.org/dc/elements/1.1/description> "Microbiota residing on the skin's surface, influencing skin health, immune responses, and playing a role in protection against pathogens."@en ;
+                                                    rdfs:label "Skin" .
+
+
+<http://purl.bioontology.org/ontology/MESH/D019936> <http://purl.org/dc/elements/1.1/description> "Denotes microorganisms that, when ingested, may have a positive impact on mental health and cognitive function, influencing the bidirectional communication between the gut and the brain."@en ;
+                                                    rdfs:label "Psicobiotic"@en .
+
+
+<http://purl.bioontology.org/ontology/MESH/D056692> <http://purl.org/dc/elements/1.1/description> "Substances, typically non-digestible fibers, that promote the growth and activity of beneficial microorganisms in the gastrointestinal tract."@en ;
+                                                    rdfs:label "Prebiotic"@en .
+
+
+<http://purl.bioontology.org/ontology/MESH/D064806> <http://purl.org/dc/elements/1.1/description> "Imbalance or disruption in the normal composition of the microbiota, exploring the implications of dysbiosis on health and potential therapeutic interventions."@en ;
+                                                    rdfs:label "Dysbiosis" .
+
+
+<http://purl.bioontology.org/ontology/MESH/T029> <http://purl.org/dc/elements/1.1/description> "Specific anatomical locations within the human body where microbiota reside, influencing and being influenced by the local environment."@en ;
+                                                 rdfs:label "Body Location" .
+
+
+<http://purl.bioontology.org/ontology/SNOMEDCT/41146007> <http://purl.org/dc/elements/1.1/description> "Represents unicellular microorganisms, primarily bacteria, that constitute an integral part of the microbiota and play diverse roles in human health"@en ;
+                                                         rdfs:comment "Consider the diversity within this class for detailed analyses. Include both beneficial and pathogenic bacteria, as both significantly influence human health."@en ;
+                                                         rdfs:label "Bacterium"@en .
+
+
+<http://purl.bioontology.org/ontology/SNOMEDCT/767279008> <http://purl.org/dc/elements/1.1/description> "Metabolic byproducts produced by the microbiota, exploring their potential roles in health and disease."@en ;
+                                                          rdfs:label "Metabolite" .
+
+
+<http://purl.org/sig/ont/fma/265130> <http://purl.org/dc/elements/1.1/description> "Microbiota residing in the respiratory system, including the nose, throat, and lungs, exploring their role in respiratory health and potential connections with systemic well-being."@en ;
+                                     rdfs:label "Respiratory Tract" .
+
+
+<http://vocabs.lter-europe.net/EnvThes/21962> <http://purl.org/dc/elements/1.1/description> "Encompasses biotic elements in the environment, such as microorganisms, that interact with the microbiota and contribute to its composition and function"@en ;
+                                              rdfs:label "Biotics"@en .
+
+
+<http://w3id.org/micronto/0009> <http://purl.org/dc/elements/1.1/description> "A class that forms an n-ary relationship between Person, Disease, and Medicines. It serves to connect the diagnosis of diseases in a person with the prescribed medicines and their implications on health."@en ;
+                                rdfs:comment "Essential for modeling the complexities of diagnosis and treatment, this class captures the multi-faceted interactions between human health, diseases, and medical interventions."@en ;
+                                rdfs:label "DiagnosisRelation"@en .
+
+
+<https://identifiers.org/data_1872> <http://purl.org/dc/elements/1.1/description> "Taxonomic classification of microorganisms within the microbiota, providing a framework for understanding the diversity and relationships between different microbial species."@en ;
+                                    rdfs:label "Taxonomic Classification" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; ":" "NCIT:C45292" "NCIT:C25150" ":" "loinc:LP30322-9" ":" ":" "mesh:T029" "NCIT:C14283" ":" ":" "NCIT:C45290" "mesh:D004064" ":" ":" "medline:C0013227" "NCIT:C45280" ":" ":" "NCIT:C45287" "mesh:D064806" "ITO:data_1872" "loinc:MTHU019420" ":" ":" "EDAM:data_1044" ":" ":" "loinc:LP133774-2" "loinc:LP208944-1" ":" "mesh:D009055" "NCIT:C45277" ; /*classes style*/
+	"micronto:isPartOfClass" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	"micronto:isPartOfFamily" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	"micronto:isPartOfKingdom" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	"micronto:" -> "https://creativecommons.org/licenses/by/4.0/" [ label = "dc:license" ];
+	"micronto:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"micronto:" -> "https://w3id.org/micronto/"Alberto Gonzalez Calatayud"" [ label = "dc:creator" ];
+	"micronto:" -> "https://w3id.org/micronto/"Alejandro Bernabeu Durendez"" [ label = "dc:creator" ];
+	"micronto:" -> "https://w3id.org/example#" [ label = "vann:preferredNamespaceUri" ];
+	"micronto:" -> "https://w3id.org/micronto/1.0" [ label = "owl:versionIRI" ];
+	"micronto:" -> "https://w3id.org/example/1.0.0" [ label = "owl:priorVersion" ];
+	"NCIT:C14283" -> ":" [ label = "owl:disjointWith" ];
+	"micronto:isPartOfGenus" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	"micronto:isPartOfDomain" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	"micronto:isPartOfPhylum" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	"http://base.namespace.com/isaffectedby" -> "cwrc:alteredBy" [ label = "owl:equivalentProperty" ];
+	"micronto:isPartOfOrder" -> "swc:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	":" -> "NCIT:C25150" [ label = "cwrc:alteredBy" ];
+	"loinc:LP133774-2" -> ":" [ label = "dpo:hasDiagnosis" ];
+	"NCIT:C45290" -> "NCIT:C45287" [ label = "micronto:isPartOfOrder" ];
+	"NCIT:C45277" -> "EDAM:data_1044" [ label = "micronto:isPartOfKingdom" ];
+	"loinc:LP208944-1" -> ":" [ label = "http://purl.obolibrary.org/obo/ro.owl#0002469" ];
+	"loinc:MTHU019420" -> ":" [ label = "http://base.namespace.com/isaffectedby" ];
+	"loinc:MTHU019420" -> "ITO:data_1872" [ label = "arco:hasClassification" ];
+	"NCIT:C45280" -> "NCIT:C45277" [ label = "micronto:isPartOfPhylum" ];
+	"NCIT:C25150" -> ":" [ label = "saont:impacts" ];
+	"EDAM:data_1044" -> ":" [ label = "micronto:isPartOfDomain" ];
+	":" -> "mesh:D064806" [ label = "http://purl.obolibrary.org/obo/chmo.owl/0010017(mitigates)" ];
+	"NCIT:C45292" -> "NCIT:C45290" [ label = "micronto:isPartOfFamily" ];
+	"loinc:LP208944-1" -> "mesh:D004064" [ label = "OBO:REL_influences" ];
+	"loinc:LP133774-2" -> "loinc:MTHU019420" [ label = "http://w3id.org/micronto/0010" ];
+	":" -> "loinc:MTHU019420" [ label = "s4wear:interactsWith" ];
+	":" -> ":" [ label = "ptop:involvedEntityIn" ];
+	":" -> "owl:Thing" [ label = "loinc:MTHU062386" ];
+	"loinc:LP30322-9" -> "mesh:D009055" [ label = "swc:isPartOf" ];
+	"mesh:T029" -> "loinc:MTHU019420" [ label = "STY:T029" ];
+	":" -> "mesh:T029" [ label = "http://base.namespace.com/BAO_0090007" ];
+	"loinc:MTHU019420" -> ":" [ label = "schema:produces" ];
+	":" -> "NCIT:C45292" [ label = "micronto:isPartOfGenus" ];
+	"NCIT:C45287" -> "NCIT:C45280" [ label = "micronto:isPartOfClass" ];
+	":" -> "medline:C0013227" [ label = "OBO:ODAE_0000019" ];
+	"NCIT:C25150" -> "loinc:MTHU019420" [ label = "MESH:D000339" ];
+	"loinc:LP133774-2" -> "NCIT:C25150" [ label = "s4ehaw:hasAgeCategory" ];
+	":" -> ":" [ label = "http://base.namespace.com/BAO_0000398" ];
+
+}

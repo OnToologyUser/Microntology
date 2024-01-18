@@ -12,8 +12,8 @@
     <owl:Ontology rdf:about="https://w3id.org/micronto/">
         <owl:versionIRI rdf:resource="https://w3id.org/micronto/1.0"/>
         <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-12</dc:created>
-        <dc:creator rdf:resource="https://w3id.org/micronto/Alberto_Gonzalez_Calatayud"/>
-        <dc:creator rdf:resource="https://w3id.org/micronto/Alejandro_Bernabeu_Durendez"/>
+        <dc:creator rdf:resource="https://w3id.org/micronto/%22Alberto%20Gonzalez%20Calatayud%22"/>
+        <dc:creator rdf:resource="https://w3id.org/micronto/%22Alejandro%20Bernabeu%20Durendez%22"/>
         <dc:description xml:lang="en">This ontology aims to capture and model the intricate relationships between the human microbiota and various aspects of human health, including but not limited to diseases, physiological functions, and environmental interactions.</dc:description>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dc:title xml:lang="en">The Microbiota on Human Health Ontology (MHHO)</dc:title>

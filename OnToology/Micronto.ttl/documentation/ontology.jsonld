@@ -1214,9 +1214,9 @@
     "@value" : "2023-05-12"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@id" : "https://w3id.org/micronto/Alberto_Gonzalez_Calatayud"
+    "@id" : "https://w3id.org/micronto/%22Alberto%20Gonzalez%20Calatayud%22"
   }, {
-    "@id" : "https://w3id.org/micronto/Alejandro_Bernabeu_Durendez"
+    "@id" : "https://w3id.org/micronto/%22Alejandro%20Bernabeu%20Durendez%22"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
